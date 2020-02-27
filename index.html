@@ -11,7 +11,10 @@
   <script src="Build/UnityLoader.js"></script>
   <script>
     var gameInstance = UnityLoader.instantiate("gameContainer", "Build/CubicInLet_web.json", {
-      onProgress: UnityProgress
+      onProgress: UnityProgress,
+      Module: {
+        TOTAL_STACK: 6 * 1024 * 1024
+      }
     });
   </script>
 </head>
